@@ -1,0 +1,23 @@
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1{
+    font-size: 3rem;
+    color: rgb(165, 55, 253);
+    font-family: Prata,serif;
+}
+.main-img{
+    width: 40vw;
+    margin: 2rem;
+}
+
+@media(max-width:700px){
+    .main-img{
+        width: 90vw;
+        margin: 1.2rem;
+    }
+}

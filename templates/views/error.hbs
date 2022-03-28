@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headlink}}
+    <style>
+        .error-cont{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .error-cont h1{
+            font-size: 4rem;
+            color: rgb(165, 55, 253);
+            font-family: Prata,serif;
+            font-weight: 700;
+        }
+        .error-cont p{
+            font-size: 3rem;
+            font-weight: 400;
+            font-family: lato, sans-serif;
+
+        }
+    </style>
+
+    <title>Learn With Ayush</title>
+</head>
+<body>
+    {{>nav}}
+
+
+
+    <div class="error-cont">
+        <h1>404 ERROR</h1>
+        <p>Page does not exist</p>
+    </div>
+
+
+
+
+    {{>footer}}
+
+    <script src="./js/nav.js"></script>
+</body>
+</html>

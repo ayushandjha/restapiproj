@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headlink}}
+    <link rel="stylesheet" href="./css/signup.css">
+    
+
+    <title>Learn With Ayush</title>
+</head>
+<body>
+    {{>nav}}
+
+
+    <section class="form-cont" id="form-cont">
+
+        <form action="/signup" method="post" class="signup-form" id="signup-form">
+            <h2>Sign up</h2>
+            <div class="name-cont">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="name dabba" required>
+            </div>
+            <div class="email-cont">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="email dabba" required>
+            </div>
+            <div class="dob-cont">
+                <label for="dob">Date of birth</label>
+                <input type="date" name="dob" id="dob" class="dob dabba">
+            </div>
+            <div class="gender-cont">
+                <span>Gender</span>
+                <div class="male-cont">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male" id="male" class="male">
+                </div>
+                <div class="female-cont">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" id="female" class="female">
+                </div>
+            </div>
+            <div class="phone-cont">
+                <label for="phone">Phone No.</label>
+                <input type="tel" name="phone" id="phone" class="phone dabba">
+            </div>
+            <div class="address-cont">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" class="address dabba">
+            </div>
+            <div class="password-cont">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="password dabba" required>
+            </div>
+            <div class="con-password-cont">
+                <label for="con-password">Con. Password</label>
+                <input type="password" name="confirmPassword" id="con-password" class="con-password dabba">
+            </div required>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            
+        </form>
+    </section>
+
+
+    {{>footer}}
+
+    <script src="./js/nav.js"></script>
+</body>
+</html>
